@@ -1,0 +1,29 @@
+{
+  "name": "hot-ranking",
+  "version": "1.0.0",
+  "description": "Reddit Hot raking algorithm",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "keywords": [
+    "hot",
+    "rank",
+    "ranking",
+    "reddit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ialex/hot-ranking"
+  },
+  "author": "Alejandro Villanueva",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  },
+  "bugs": {
+    "url": "https://github.com/ialex/hot-ranking/issues"
+  },
+  "homepage": "https://github.com/ialex/hot-ranking"
+}
