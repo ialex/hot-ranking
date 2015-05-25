@@ -5,8 +5,13 @@ var hot = require("./index");
 
 
 describe("Ranking algorithm", function() {
+
   it("Must throw if date is invalid", function() {
     expect( function(){ hot( 0, 1, "invalid Date" ) } ).to.throw("You must pass a valid date object");
+  });
+
+  it("Returns hot score for an item", function() {
+    expect( hot( 3593, 0, new Date(2015, 5, 23, 8 - 8, 55) ) ).to.be.a.Number;
   });
 
   it("Must return the items ordered properly", function() {
