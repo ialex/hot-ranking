@@ -4,7 +4,7 @@
   "description": "Reddit Hot raking algorithm",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/mocha --reporter spec --ui bdd"
   },
   "keywords": [
     "hot",

@@ -17,7 +17,11 @@ module.exports = function hot_ranking(ups, downs, date) {
   sign = score > 0 ? 1 :
          score < 0 ? -1 :
          0 ;
-  seconds = (date.getTime() / 1000) - 1134028003;
+  seconds = epochSeconds(date) - 1134028003;
   rank = sign * order + seconds / 45000;
   return rank.toPrecision(11);
+};
+
+var epochSeconds = function epochSeconds(date) {
+  return (date.getTime() - new Date(1970,1,1).getTime()) / 1000;
 };
