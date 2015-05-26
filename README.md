@@ -16,8 +16,9 @@ npm install hot-ranking
 ```
 
 ## USAGE
-```
+
 **`hot(upvotes, downvotes, date)`**
+
 ```
 // Load library
 var hot = require("hot-ranking");
